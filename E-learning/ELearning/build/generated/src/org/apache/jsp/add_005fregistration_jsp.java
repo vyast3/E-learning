@@ -1,0 +1,350 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class add_005fregistration_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List _jspx_dependants;
+
+  private javax.el.ExpressionFactory _el_expressionfactory;
+  private org.apache.AnnotationProcessor _jsp_annotationprocessor;
+
+  public Object getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _el_expressionfactory = _jspxFactory.getJspApplicationContext(getServletConfig().getServletContext()).getExpressionFactory();
+    _jsp_annotationprocessor = (org.apache.AnnotationProcessor) getServletConfig().getServletContext().getAttribute(org.apache.AnnotationProcessor.class.getName());
+  }
+
+  public void _jspDestroy() {
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+
+    try {
+      response.setContentType("text/html");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+
+      out.write("\n");
+      out.write("\n");
+      out.write("?<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n");
+      out.write("<html xmlns=\"http://www.w3.org/1999/xhtml\">\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n");
+      out.write("        <title>E-Learning</title>\n");
+      out.write("        <style type=\"text/css\" media=\"screen\">\n");
+      out.write("            @import url(\"css/layout.css\");\n");
+      out.write("            .style1\n");
+      out.write("            {\n");
+      out.write("                width: 100%;\n");
+      out.write("            }\n");
+      out.write("        </style>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <div id=\"layout\">\n");
+      out.write("            <div id=\"header\">\n");
+      out.write("                <div id=\"logo\">\n");
+      out.write("                    <a href=\"#\">\n");
+      out.write("                        <img src=\"images/logo_1.gif\" alt=\"\" /></a></div>\n");
+      out.write("                <div class=\"member_login\">\n");
+      out.write("                    <div class=\"login_box\">\n");
+      out.write("                        <form action=\"\" method=\"get\">\n");
+      out.write("                            <fieldset>\n");
+      out.write("                                <div class=\"column_1\">\n");
+      out.write("                                    <label>\n");
+      out.write("                                        username :</label>\n");
+      out.write("                                    <label>\n");
+      out.write("                                        password :</label>\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"column_2\">\n");
+      out.write("                                    <input type=\"text\" name=\"\" value=\"\" />\n");
+      out.write("                                    <input type=\"text\" name=\"\" value=\"\" />\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"column_3\">\n");
+      out.write("                                    <input type=\"image\" src=\"images/login_btn.gif\" class=\"login\" />\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"column_4\">\n");
+      out.write("                                    <label class=\"password\">\n");
+      out.write("                                        <a href=\"#\">Forgot\n");
+      out.write("                                            <br />\n");
+      out.write("                                            password</a></label>\n");
+      out.write("                                </div>\n");
+      out.write("                            </fieldset>\n");
+      out.write("                        </form>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("            <div id=\"body_container\">\n");
+      out.write("                <div id=\"body_container_inner\">\n");
+      out.write("                    <div id=\"menu\">\n");
+      out.write("                        <ul>\n");
+      out.write("                            <li class=\"first\"><a href=\"index.html\">home</a></li>\n");
+      out.write("                            <li><a href=\"about_us.html\" class=\"about_us.html\">about us</a></li>\n");
+      out.write("                            <li><a href=\"course.html\">course</a></li>\n");
+      out.write("                            <li><a href=\"syllabus.html\">syllabus</a></li>\n");
+      out.write("                            <li><a class=\"current\">Registration</a></li>\n");
+      out.write("                            <li><a href=\"add_feedback.jsp\">Feedback</a></li>\n");
+      out.write("                        </ul>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div class=\"banner\">\n");
+      out.write("                        <a href=\"#\">\n");
+      out.write("                            <img src=\"images/banner_1.gif\" alt=\"\" /></a></div>\n");
+      out.write("                    <div class=\"container_row\">\n");
+      out.write("                        <div class=\"welcomezone\" style=\"font-size: 15px;\">\n");
+      out.write("                            <div class=\"blueboldheading\">\n");
+      out.write("                                <h1>\n");
+      out.write("                                    Student Registration Form :</h1>\n");
+      out.write("                            </div>\n");
+      out.write("                            <form action=\"AddStudentServlet\" method=\"post\">\n");
+      out.write("                                <table class=\"style1\">\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            Student Name :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <input name=\"StudentName\" type=\"text\" />\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            Father Name :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <input name=\"FatherName\" type=\"text\" />\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            Date of Birth :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                            <select id=\"Select1\" name=\"date\">\n");
+      out.write("                                                <option>1</option>\n");
+      out.write("                                                <option>2</option>\n");
+      out.write("                                                <option>3</option>\n");
+      out.write("                                                <option>4</option>\n");
+      out.write("                                                <option>5</option>\n");
+      out.write("                                                <option>6</option>\n");
+      out.write("                                                <option>7</option>\n");
+      out.write("                                                <option>8</option>\n");
+      out.write("                                                <option>9</option>\n");
+      out.write("                                                <option>10</option>\n");
+      out.write("                                                <option>11</option>\n");
+      out.write("                                                <option>12</option>\n");
+      out.write("                                                <option>13</option>\n");
+      out.write("                                                <option>14</option>\n");
+      out.write("                                                <option>15</option>\n");
+      out.write("                                                <option>16</option>\n");
+      out.write("                                                <option>17</option>\n");
+      out.write("                                                <option>18</option>\n");
+      out.write("                                                <option>19</option>\n");
+      out.write("                                                <option>20</option>\n");
+      out.write("                                                <option>21</option>\n");
+      out.write("                                                <option>22</option>\n");
+      out.write("                                                <option>23</option>\n");
+      out.write("                                                <option>24</option>\n");
+      out.write("                                                <option>25</option>\n");
+      out.write("                                                <option>26</option>\n");
+      out.write("                                                <option>27</option>\n");
+      out.write("                                                <option>28</option>\n");
+      out.write("                                                <option>29</option>\n");
+      out.write("                                                <option>30</option>\n");
+      out.write("                                                <option>31</option>\n");
+      out.write("                                            </select><select id=\"Select2\" name=\"month\">\n");
+      out.write("                                                <option>1</option>\n");
+      out.write("                                                <option>2</option>\n");
+      out.write("                                                <option>3</option>\n");
+      out.write("                                                <option>4</option>\n");
+      out.write("                                                <option>5</option>\n");
+      out.write("                                                <option>6</option>\n");
+      out.write("                                                <option>7</option>\n");
+      out.write("                                                <option>8</option>\n");
+      out.write("                                                <option>9</option>\n");
+      out.write("                                                <option>10</option>\n");
+      out.write("                                                <option>11</option>\n");
+      out.write("                                                <option>12</option>\n");
+      out.write("                                            </select><select id=\"Select3\" name=\"year\">\n");
+      out.write("                                                <option>1980</option>\n");
+      out.write("                                                <option>1981</option>\n");
+      out.write("                                                <option>1982</option>\n");
+      out.write("                                                <option>1983</option>\n");
+      out.write("                                                <option>1984</option>\n");
+      out.write("                                                <option>1985</option>\n");
+      out.write("                                                <option>1986</option>\n");
+      out.write("                                                <option>1987</option>\n");
+      out.write("                                                <option>1988</option>\n");
+      out.write("                                                <option>1989</option>\n");
+      out.write("                                                <option>1990</option>\n");
+      out.write("                                                <option>1991</option>\n");
+      out.write("                                                <option>1992</option>\n");
+      out.write("                                                <option>1993</option>\n");
+      out.write("                                                <option>1994</option>\n");
+      out.write("                                                <option>1995</option>\n");
+      out.write("                                                <option>1996</option>\n");
+      out.write("                                                <option>1997</option>\n");
+      out.write("                                                <option>1998</option>\n");
+      out.write("                                                <option>1999</option>\n");
+      out.write("                                                <option>2000</option>\n");
+      out.write("                                                <option>2001</option>\n");
+      out.write("                                                <option>2002</option>\n");
+      out.write("                                                <option>2003</option>\n");
+      out.write("                                                <option>2004</option>\n");
+      out.write("                                            </select>\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            Email :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <input name=\"Email\" type=\"text\" />\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            Contact No :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <input name=\"ContactNo\" type=\"text\" />\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            Address :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <textarea name=\"Address\" cols=\"20\" rows=\"4\"></textarea>\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            State Name :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <input name=\"StateName\" type=\"text\" />\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            City Name :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <input name=\"City\" type=\"text\" />\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            Password :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <input name=\"Pwd\" type=\"password\" />\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            Repeat Password :\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <input name=\"rePwd\" type=\"password\" />\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                    <tr>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            <input name=\"btnReg\" type=\"submit\" value=\"Register\" />\n");
+      out.write("                                        </td>\n");
+      out.write("                                        <td>\n");
+      out.write("                                            &nbsp;\n");
+      out.write("                                        </td>\n");
+      out.write("                                    </tr>\n");
+      out.write("                                </table>\n");
+      out.write("                            </form>\n");
+      out.write("                            <div class=\"clear\">\n");
+      out.write("                            </div>\n");
+      out.write("                        </div>\n");
+      out.write("                        <div class=\"clear\">\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                    <div id=\"footer\">\n");
+      out.write("                        <div class=\"footer_link\">\n");
+      out.write("                            <ul style=\"color: #FFf;\">\n");
+      out.write("                                Copyright (c) Sitename.com. All rights reserved. Design by Stylish <a style=\"text-decoration: underline;\n");
+      out.write("                                                                                                      color: #FFF;\" href=\"http://www.stylishtemplate.com\">Website Templates</a>.\n");
+      out.write("                            </ul>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          try { out.clearBuffer(); } catch (java.io.IOException e) {}
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
